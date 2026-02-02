@@ -6,10 +6,10 @@ on:
 
 env:
   IMAGE_REGISTRY_URL: ghcr.io
-  AZURE_RESOURCE_GROUP: cd-with-actions
-  AZURE_APP_PLAN: actions-ttt-deployment
-  AZURE_LOCATION: '"UK South"'
-  AZURE_WEBAPP_NAME: raeesgillani-ttt-app
+  AZURE_RESOURCE_GROUP: cd-with-actions3
+  AZURE_APP_PLAN: actions-ttt-deployment3
+  AZURE_LOCATION: '"Belgium Central"'
+  AZURE_WEBAPP_NAME: raeesgillani-ttt-app3
 
 jobs:
   setup-up-azure-resources:
