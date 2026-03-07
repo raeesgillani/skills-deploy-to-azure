@@ -1,0 +1,23 @@
+name: Matrix Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-matrix:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-20.04, ubuntu-22.04]
+        node: [14, 16]
+        include:
+          - os: ubuntu-24.04
+            node: 18
+          - os: ubuntu-20.04
+            node: 14
+
+    steps:
+      - name: Show matrix values
+        run: |
+          echo "OS: ${{ matrix.os }}"
+          echo "Node: ${{ matrix.node }}"
